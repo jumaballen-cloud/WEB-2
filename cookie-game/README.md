@@ -1,47 +1,36 @@
 # Cookie Game
 
-Página de inicio de Cookie Game, una plataforma para descubrir videojuegos, categorías y recomendaciones. Cada juego tiene su sabor: descubre el tuyo.
+Cookie Game es una página web creada para descubrir videojuegos, explorar diferentes categorías y encontrar recomendaciones de juegos de forma sencilla.
 
-## Ejecutar el proyecto
+## Ejecución del proyecto
 
-Requisitos: Node.js 22.12 o superior y npm.
+Para utilizar el proyecto es necesario contar con Node.js y npm instalados. Desde la carpeta principal se ejecutan los comandos necesarios para instalar las dependencias y poner en marcha la aplicación. Una vez iniciado, solo se debe abrir en el navegador la dirección mostrada en la terminal.
 
-Desde la carpeta del proyecto:
+Para generar la versión final del proyecto, se utilizan los comandos de compilación y vista previa.
 
-```bash
-npm install
-npm run dev
-```
+## Herramientas utilizadas
 
-Abrir la dirección que aparece en la terminal.
+- React: permite crear y organizar los componentes de la página.
+- Vite: facilita el desarrollo y la generación de la aplicación.
+- Bootstrap: ayuda a construir un diseño adaptable para diferentes tamaños de pantalla.
+- CSS: se utiliza para personalizar colores, tamaños de texto y estilos visuales.
 
-Para generar la versión de producción y revisarla:
+## Organización del proyecto
 
-```bash
-npm run build
-npm run preview
-```
+- src/App.jsx: contiene y organiza todas las secciones de la página.
+- src/main.jsx: inicia la aplicación e importa los estilos necesarios.
+- src/components/Navbar.jsx: muestra el nombre de la plataforma y el menú de navegación.
+- src/components/Hero.jsx: presenta la bienvenida y el juego destacado.
+- src/components/Categorias.jsx: muestra las categorías de videojuegos.
+- src/components/Juegos.jsx: contiene el listado de juegos destacados.
+- src/components/JuegoCard.jsx: muestra la información de cada juego utilizando una misma estructura.
+- src/components/Novedades.jsx: presenta recomendaciones y novedades.
+- src/components/Footer.jsx: contiene la información final de la página.
+- src/assets/: almacena las imágenes utilizadas en el proyecto.
+- src/styles.css: contiene los estilos y ajustes visuales de la plataforma.
 
-## Herramientas
-
-React para los componentes, Vite para el entorno de desarrollo y Bootstrap para la cuadrícula adaptable y las tarjetas. Los colores, la tipografía y los espacios se personalizan en `src/styles.css`.
-
-## Organización
-
-- `src/App.jsx`: reúne las secciones dentro de una sola página.
-- `src/main.jsx`: monta la aplicación e importa los estilos.
-- `src/components/Navbar.jsx`: nombre y enlaces internos.
-- `src/components/Hero.jsx`: bienvenida y juego principal.
-- `src/components/Categorias.jsx`: cuatro categorías de videojuegos.
-- `src/components/Juegos.jsx`: listado de juegos destacados.
-- `src/components/JuegoCard.jsx`: tarjeta reutilizable que recibe los datos por props.
-- `src/components/Novedades.jsx`: lanzamientos y recomendaciones ficticias.
-- `src/components/Footer.jsx`: información de cierre.
-- `src/assets/`: imágenes descargadas de los videojuegos. Sus fuentes están en `FUENTES_IMAGENES.md`.
-- `src/styles.css`: estilos propios y ajustes para móvil.
-
-La navegación usa enlaces a secciones de la misma página. No se necesitan rutas, API, registro ni base de datos para esta etapa.
+La navegación se realiza dentro de una sola página, por lo que no fue necesario implementar rutas, bases de datos ni servicios externos.
 
 ## Vista previa sin instalaciones
 
-Abre `vista-previa.html` con doble clic en Chrome o Edge. Es una copia compilada para visualizar la página; el código editable está en `src`.
+- vista-previa.html: permite visualizar la página directamente en el navegador sin instalar dependencias. El código editable del proyecto se encuentra en la carpeta src.
